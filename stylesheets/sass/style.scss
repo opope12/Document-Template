@@ -1,0 +1,60 @@
+	// Oliver's SASS
+
+	// Global Colors
+	$linkcolor: #FF4136;
+	$textcolor: #111111;
+	$headcolor: #111111;
+	$bordercolor: #111111;
+	$backgroundcolor: #ffffff;
+
+	// Styles
+
+		// Global
+		html {
+			margin: {
+				top: 3em;
+				left: 10%;
+				right: 10%;
+			}
+			color: $textcolor;
+			background: $backgroundcolor;
+			font: {
+				family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				weight: 300;
+			}
+			a {
+				color: $linkcolor;
+				text-decoration: none;
+				transition: 1s all;
+				-webkit-transition: 1s all;
+				&:hover {
+					color: $textcolor;
+				}
+			}
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font: {
+				size: 110%;
+				weight: 500;
+			}
+			color: $headcolor;
+		}
+
+		// Header
+		header {
+			h1 {
+				font-size: 150%;
+			}
+			h2 {
+				font-size: 120%;
+			}
+			hr {
+				border: 0;
+				height: 1px;
+				background: #333;
+				background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+			}
+		}
