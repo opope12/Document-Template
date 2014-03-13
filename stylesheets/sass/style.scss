@@ -39,6 +39,16 @@
 			}
 			color: $headcolor;
 		}
+		b, strong {
+			font-weight: 500;
+		}
+		.light {
+			font-weight: 300;
+		}
+
+		.bold {
+			font-weight: 500;
+		}
 
 		// Header
 		header {
