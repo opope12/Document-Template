@@ -102,3 +102,18 @@
 		.label-danger {
 			background: $danger;
 		}
+
+		// Share
+		.share {
+			background: $muted;
+			border-radius: 2px;
+			display: block;
+			padding: 20px 0;
+			.wrapper {
+				margin: 0 5%;
+				div {
+					display: inline-block;
+					margin: 0;
+				}
+			}
+		}
