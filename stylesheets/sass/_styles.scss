@@ -1,12 +1,5 @@
 	// Oliver's SASS
 
-	// Global Colors
-	$linkcolor: #FF4136;
-	$textcolor: #111111;
-	$headcolor: #111111;
-	$bordercolor: #111111;
-	$backgroundcolor: #ffffff;
-
 	// Styles
 
 		// Global
@@ -32,6 +25,8 @@
 				}
 			}
 		}
+
+		// Typography
 		h1, h2, h3, h4, h5, h6 {
 			font: {
 				size: 110%;
@@ -67,4 +62,43 @@
 				background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
 				background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
 			}
+		}
+
+		// Labels
+		.label {
+			display: inline-block;
+			vertical-align: text-top;
+			color: $textcolor;
+			padding: {
+				right: 5px;
+				left: 5px;
+				top: 2.5px;
+				bottom: 2.5px;
+			}
+			font: {
+				weight: 400;
+				size: 40%;
+			}
+			text-transform: uppercase;
+			border-radius: 2px;
+		}
+
+		.label-primary {
+			background: $primary;
+		}
+
+		.label-success {
+			background: $success;
+		}
+
+		.label-info {
+			background: $info;
+		}
+
+		.label-warning {
+			background: $warning;
+		}
+
+		.label-danger {
+			background: $danger;
 		}
