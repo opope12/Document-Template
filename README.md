@@ -5,10 +5,22 @@ The HTML5 and SASS Template for your documents!
 - Easily change colors through SASS variables
 - Completely Responsive
 - Organized SASS
-- [Zocial](http://weloveiconfonts.com/#zocial) Web Font Integration
 - Starter document all ready for you! Found at `starter/starter.html`
 - Markdown to HTML using [showdown.js](https://github.com/coreyti/showdown)
 - Perfect for any document!
+
+## CDN for CSS and HTML
+
+```
+<!-- Document Template CSS -->
+<link href="http://owebs.pw/doctemp/stylesheets/css/dt.css" rel="stylesheet" type="text/css">
+
+<!-- Showdown.js -->
+<script src="http://owebs.pw/doctemp/scripts/libs/showdown.js"></script>
+
+<!-- Document Template JavaScript -->
+<script src="http://owebs.pw/doctemp/scripts/global.js"></script>
+```
 
 ## How to use Markdown to HTML feature
 Using [showdown.js](https://github.com/coreyti/showdown), you can easily set it up where it grabs your markdown from `<div id="md"></div>` and convert it into valid HTML. Then you put it in `<div id="content"></div>`

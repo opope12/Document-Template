@@ -1,3 +1,6 @@
+// Oliver's SASS
+// _variables.scss
+
 // Variables
 
 // Colors
@@ -15,4 +18,15 @@
 		$info: #7FDBFF;
 		$warning: #FFDC00;
 		$danger: #FF4136;
-		$muted: #ccc
+		$muted: #ccc;
+
+// Font Sizes
+
+	// Heading
+	$heading: 110%;
+
+	// Paragraph
+	$paragraph: 100%;
+
+	// Code
+	$code: .75em;

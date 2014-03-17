@@ -1,4 +1,5 @@
 	// Oliver's SASS
+	// _styles.scss
 
 	// Styles
 
@@ -24,15 +25,45 @@
 					color: $textcolor;
 				}
 			}
+			hr {
+				border: 0;
+				height: 1px;
+				background: #333;
+				background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+				background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+			}
+		}
+
+		// Code
+		code {
+			display: inline-block;
+			background: $muted;
+			border-radius: 2px;
+			padding: 1em;
+			font: {
+				family: Monaco, "Lucida Console", monospace;
+				size: $code;
+				weight: normal;
+			}
+		}
+
+		pre {
+			@extend code;
+			display: block;
 		}
 
 		// Typography
 		h1, h2, h3, h4, h5, h6 {
 			font: {
-				size: 110%;
+				size: $heading;
 				weight: 500;
 			}
 			color: $headcolor;
+		}
+		p {
+			font-size: $paragraph;
 		}
 		b, strong {
 			font-weight: 500;
@@ -53,15 +84,12 @@
 			h2 {
 				font-size: 120%;
 			}
-			hr {
-				border: 0;
-				height: 1px;
-				background: #333;
-				background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
-				background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
-				background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
-				background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
-			}
+		}
+
+		// Images
+		img {
+			min-width: 100%;
+			border-radius: 2px;
 		}
 
 		// Markdown
@@ -116,9 +144,12 @@
 			padding: 20px 0;
 			.wrapper {
 				margin: 0 5%;
-				div {
+				#button {
 					display: inline-block;
 					margin: 0;
+					div, a {
+						float: left;
+					}
 				}
 			}
 		}
