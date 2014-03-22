@@ -5,11 +5,6 @@
 
 		// Global
 		html {
-			margin: {
-				top: 3em;
-				left: 10%;
-				right: 10%;
-			}
 			color: $textcolor;
 			background: $backgroundcolor;
 			font: {
@@ -52,6 +47,15 @@
 		pre {
 			@extend code;
 			display: block;
+		}
+
+		// Fancy Amp
+		.amp {
+			font: {
+				family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+				style: italic;
+				weight: normal;
+				}
 		}
 
 		// Typography

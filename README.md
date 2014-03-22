@@ -8,6 +8,7 @@ The HTML5 and SASS Template for your documents!
 - Starter document all ready for you! Found at `starter/starter.html`
 - Markdown to HTML using [showdown.js](https://github.com/coreyti/showdown)
 - Perfect for any document!
+- Using [skeleton.css](http://getskeleton.com) for the grid
 
 ## CDN for CSS and HTML
 
@@ -33,6 +34,23 @@ var html = converter.makeHtml(text); // Converting to HTML
 
 var get = document.getElementById("content"); // Getting the #content div
 get.innerHTML = (html); // Putting valid HTML in #content
+```
+
+## Share
+Using Async, we can add share functionality to any page with just some teeny bitz of code
+
+```
+<div class="share">
+
+	<div class="wrapper">
+
+		<div id="button"><div class="g-plusone" data-size="tall" data-annotation="bubble" data-count="true"></div></div>
+		<div id="button"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a></div>
+		<div id="button"><div id="fb-root"></div><div class="fb-like" data-send="false" data-layout="box_count" data-width="1" data-show-faces="false" data-action="like"></div></div>
+
+	</div>
+
+</div>
 ```
 
 ## Contact
